@@ -1,0 +1,233 @@
+<html>
+    <head>
+<title> HTML LIST</title>
+<style>
+    .emojis li::marker{
+        content: "👍";
+    }
+    .emojis li:nth-child(3)::marker{
+        content: "❤️";
+    }
+    .emojis li::marker{
+        content: url(./check-mark.png);
+    }
+
+    /*displaying images instead of markers should be less than 50px*/
+    li{
+        list-style-image: url(./check-mark.png);
+    }
+</style>
+    </head>
+    <body>
+        <center>
+            <h1>HTML LIST</h1>
+            <h3><p>There are 3 types of list</p></h3>
+        </center>
+<hr>
+<p>1) Ordered or number List (Using OL Tag)</p>
+<p>2) Unorderd or bullet List (Using UL Tag)</p>
+<p>3) Description List (Using Dl Tag)</p>
+
+<hr>
+
+<h1>1) Ordered or number List (Using OL Tag)</h1>
+<ol >
+    <li>HTML</li>
+    <LI>CSS</LI>
+    <LI>BOOTSTRAP</LI>
+    <LI>JS</LI>
+    <LI>REACT JS</LI>
+</ol>
+
+<h1>Order or Numbered List Types</h1>
+
+<p>Numeric Number (1,2,3)</p>
+<p> Captial Roman Number ( I, II, III)</p>
+<p>Capital Alphabets (A,B,C)</p>
+<p>Small Alphabet (a, b,c)</p>
+
+
+<hr>
+<ol type="1" >
+    <li>HTML</li>
+    <LI>CSS</LI>
+    <LI>BOOTSTRAP</LI>
+    <LI>JS</LI>
+    <LI>REACT JS</LI>
+</ol>
+<hr>
+<ol type="A" >
+    <li>HTML</li>
+    <LI>CSS</LI>
+    <LI>BOOTSTRAP</LI>
+    <LI>JS</LI>
+    <LI>REACT JS</LI>
+</ol>
+<hr>
+<ol type="a">
+    <li>HTML</li>
+    <LI>CSS</LI>
+    <LI>BOOTSTRAP</LI>
+    <LI>JS</LI>
+    <LI>REACT JS</LI>
+</ol>
+<hr>
+<ol type="I">
+    <li>HTML</li>
+    <LI>CSS</LI>
+    <LI>BOOTSTRAP</LI>
+    <LI>JS</LI>
+    <LI>REACT JS</LI>
+</ol>
+
+<hr>
+<ol type="i">
+    <li>HTML</li>
+    <LI>CSS</LI>
+    <LI>BOOTSTRAP</LI>
+    <LI>JS</LI>
+    <LI>REACT JS</LI>
+</ol>
+
+<h2> Start attribute is used start the list from the specific number</h2>
+
+<ol type="1"start="1" >
+    <li>HTML</li>
+    <LI>CSS</LI>
+    <LI>BOOTSTRAP</LI>
+    <LI>JS</LI>
+    <LI>REACT JS</LI>
+</ol>
+
+<hr>
+<ol type="A"start="10" >
+    <li>HTML</li>
+    <LI>CSS</LI>
+    <LI>BOOTSTRAP</LI>
+    <LI>JS</LI>
+    <LI>REACT JS</LI>
+</ol>
+<hr>
+<ol type="a"start="100" >
+    <li>HTML</li>
+    <LI>CSS</LI>
+    <LI>BOOTSTRAP</LI>
+    <LI>JS</LI>
+    <LI>REACT JS</LI>
+</ol>
+<hr>
+<ol type="I"start="20" >
+    <li>HTML</li>
+    <LI>CSS</LI>
+    <LI>BOOTSTRAP</LI>
+    <LI>JS</LI>
+    <LI>REACT JS</LI>
+</ol>
+<hr>
+<ol type="i"start="0" >
+    <li>HTML</li>
+    <LI>CSS</LI>
+    <LI>BOOTSTRAP</LI>
+    <LI>JS</LI>
+    <LI>REACT JS</LI>
+</ol>
+
+
+<br>
+<hr>
+<h1>Nested Order List</h1>
+<ol style="background-color: cadetblue; padding: 30px;border: 10px solid lightsalmon;">
+    <li>
+        <b><big>HTML</big></b>
+        <ol type="A">
+            <li>
+                HTML 4
+            </li>
+            <LI>
+                HTML 5
+            </LI>
+        </ol>
+    </li>
+    <li>
+        <b><big>CSS</big></b>
+        <ol type="A">
+            <li>
+                CSS
+            </li>
+            <lI>
+                CSS 3
+            </lI>
+        </ol>
+    </li>
+</ol>
+<hr>
+
+
+<h1> 2) Unorderd or Bullet List</h1>
+<ul>
+    <li>HTML</li>
+    <LI>CSS</LI>
+    <LI>BOOTSTRAP</LI>
+    <LI>JS</LI>
+    <LI>REACT JS</LI>
+</ul>
+<hr>
+
+<ul type="disc">
+    <li>HTML</li>
+    <LI>CSS</LI>
+    <LI>BOOTSTRAP</LI>
+    <LI>JS</LI>
+    <LI>REACT JS</LI>
+</ul>
+<hr>
+
+<ul type="circle">
+    <li>HTML</li>
+    <LI>CSS</LI>
+    <LI>BOOTSTRAP</LI>
+    <LI>JS</LI>
+    <LI>REACT JS</LI>
+</ul>
+<hr>
+
+<ul type="square">
+    <li>HTML</li>
+    <LI>CSS</LI>
+    <LI>BOOTSTRAP</LI>
+    <LI>JS</LI>
+    <LI>REACT JS</LI>
+</ul>
+<hr>
+
+
+<ul class="emojis">
+    <li>Html</li>
+    <li>Css</li>
+    <li>JavaScript</li>
+    <li>REACT js</li>
+    <li>Node js</li>
+</ul>
+<hr>
+
+
+<h1>3) Description List</h1>
+<dl style="background-color: aquamarine; border: 10px double maroon; padding: 30px;">
+    <dt style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>HTML</b></dt>
+    <dd style="background-color: azure;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint expedita dolorem non eveniet enim facilis eius rem vel ab vero. Minima blanditiis amet repellat in ex ad error aliquid doloribus.</dd>
+
+    <hr>
+    <dt style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>CSS</b></dt>
+    <dd style="background-color: aquamarine">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ullam corporis explicabo a, corrupti magni dolorem illum,<i>nemo natus fugit nihil voluptas neque accusamus iste vitae impedit? Sint, quo repellat.</i></dd>
+
+    <hr>
+
+    <dt style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> <b>Address</b></dt>
+    <dd style="background-color: aquamarine">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde eum tempore officia recusandae ipsa, autem assumenda eaque enim veniam culpa repudiandae, facere, modi dignissimos minima est deserunt sit sed cum?</dd>
+
+    
+</dl>
+
+
+    </body>
+</html>
